@@ -1,0 +1,76 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-4">Demo 4 : L'event binding - action sur évenement</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Event binding sur un Click
+                </div>
+                <div class="card-body">
+                    <p>La valeur du nombre est : {{nb1}}</p>
+                    <button (click)="add()" class="btn btn-success">+</button>
+                    <button (click)="rem()" class="btn btn-warning">-</button>
+                    <button (click)="res()" class="btn btn-danger">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Event binding sur un Mouseenter
+                </div>
+                <div class="card-body">
+                    <p>La valeur du nombre est : {{nb2}}</p>
+                    <button (mouseenter)="addParam(10)" class="btn btn-success">+</button>
+                    <button (mouseenter)="remParam(5)" class="btn btn-warning">-</button>
+                    <button (mouseenter)="resParam(0)" class="btn btn-danger">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Liste des event disponible
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">click = au clic de la souris</li>
+                        <li class="list-group-item">dblclick = au double clic de la souris</li>
+                        <li class="list-group-item">submit = à l'envoi du formulaire</li>
+                        <li class="list-group-item">blur = perte du focus (form input)</li>
+                        <li class="list-group-item">focus = au focus (form input)</li>
+                        <li class="list-group-item">scroll = au scroll de l'élément</li>
+                        <li class="list-group-item">cut = lors du ctrl+x</li>
+                        <li class="list-group-item">copy = lors du ctrl+c</li>
+                        <li class="list-group-item">paste = lors du ctrl+v</li>
+                        <li class="list-group-item">keyup = touche du clavier 'up' donc la flèche haut</li>
+                        <li class="list-group-item">keydown = touche du clavier 'down' donc la flèche bas</li>
+                        <li class="list-group-item">keypress = lors d'un appui sur un touche</li>
+                        <li class="list-group-item">mouseup = quand on lache le bouton de la souris</li>
+                        <li class="list-group-item">mousedown = quand on appuye sur le bouton de la souris</li>
+                        <li class="list-group-item">mouseenter = lors de l'entrée de la souris dans un élément</li>
+                        <li class="list-group-item">drag = lors de la sélection de l'élément à déplacer</li>
+                        <li class="list-group-item">drop = lors du relachement de ce même élément</li>
+                        <li class="list-group-item">dragover = lors du déplacement de ce dernier (toute les 100ms)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</div>
