@@ -1,1 +1,54 @@
-<p>demo2 works!</p>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-4">Demo 2 : Le Two way binding</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    TWB de string
+                </div>
+                <div class="card-body">
+                    <p>{{var1}}</p>
+                    <input type="text" [(ngModel)]="var1">
+                </div>
+            </div>
+        </div>
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    TWB de number
+                </div>
+                <div class="card-body">
+                    <p>{{var2}}</p>
+                    <input type="number" [(ngModel)]="var2">
+                </div>
+            </div>
+        </div>
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    TWB de boolean
+                </div>
+                <div class="card-body">
+                    <p>{{ var3}}</p>
+                    <input type="checkbox" [(ngModel)]="var3">
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</div>

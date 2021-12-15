@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Demo2Component implements OnInit {
 
-  constructor() { }
+  public var1 : string = undefined
+  public var2 : number = undefined
+  public var3 : boolean = true
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
