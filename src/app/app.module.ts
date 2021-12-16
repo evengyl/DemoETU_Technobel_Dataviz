@@ -13,6 +13,8 @@ import { ForOforComponent } from './components/shared/for-ofor/for-ofor.componen
 import { HomeComponent } from './components/shared/home/home.component';
 import { Demo4Component } from './components/demo/demo4/demo4.component';
 import { Demo5Component } from './components/demo/demo5/demo5.component';
+import { Demo6Component } from './components/demo/demo6/demo6.component';
+import { PowerPipe } from './components/demo/demo6/power.pipe';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { Demo5Component } from './components/demo/demo5/demo5.component';
     HomeComponent,
     Demo4Component,
     Demo5Component,
+    Demo6Component,
+    PowerPipe,
   ],
   imports: [
     BrowserModule,
