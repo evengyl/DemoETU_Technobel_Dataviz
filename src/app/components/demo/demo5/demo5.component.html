@@ -1,0 +1,55 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-4">Demo 5 : les pipes ou |</h1>
+                    <h3>Doc des pipes fourni par angular : </h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                </div>
+                <div class="card-body">
+                    <p>Avant : {{ maVar1 }}</p>
+                    <p>Après : {{ maVar1 | uppercase }}</p>
+                    <!-- comme si l'appel etait uppercase(maVar) -->
+                    <!-- console.log(maVar1.UpperCase) -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                </div>
+                <div class="card-body">
+                    <p>Avant : {{maVar2}}</p>
+                    <p>Après : {{ maVar2 | number : "3.2-4" }}</p>
+                    <!-- on aurais en phase 1 sans param autre : number(maVar2) -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                </div>
+                <div class="card-body">
+                    <p>Avant : {{maVar3}}</p>
+                    <p>Après : {{maVar3 | date : "dd/MM/yyyy"}}</p>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</div>

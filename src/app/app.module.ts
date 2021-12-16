@@ -12,6 +12,7 @@ import { Demo3Component } from './components/demo/demo3/demo3.component';
 import { ForOforComponent } from './components/shared/for-ofor/for-ofor.component';
 import { HomeComponent } from './components/shared/home/home.component';
 import { Demo4Component } from './components/demo/demo4/demo4.component';
+import { Demo5Component } from './components/demo/demo5/demo5.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { Demo4Component } from './components/demo/demo4/demo4.component';
     ForOforComponent,
     HomeComponent,
     Demo4Component,
+    Demo5Component,
   ],
   imports: [
     BrowserModule,
