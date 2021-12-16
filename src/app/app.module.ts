@@ -15,6 +15,10 @@ import { Demo4Component } from './components/demo/demo4/demo4.component';
 import { Demo5Component } from './components/demo/demo5/demo5.component';
 import { Demo6Component } from './components/demo/demo6/demo6.component';
 import { PowerPipe } from './components/demo/demo6/power.pipe';
+import { Exos1dot1Component } from './components/exos/exos1dot1/exos1dot1.component';
+import { Exos1dot2Component } from './components/exos/exos1dot2/exos1dot2.component';
+import { ConverterTempPipe } from './components/exos/exos1dot1/converter-temp.pipe';
+import { ConverterSecPipe } from './components/exos/exos1dot2/converter-sec.pipe';
 
 
 @NgModule({
@@ -30,6 +34,10 @@ import { PowerPipe } from './components/demo/demo6/power.pipe';
     Demo5Component,
     Demo6Component,
     PowerPipe,
+    Exos1dot1Component,
+    Exos1dot2Component,
+    ConverterTempPipe,
+    ConverterSecPipe,
   ],
   imports: [
     BrowserModule,
