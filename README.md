@@ -26,7 +26,9 @@ exemple : si le user tape 37 -> ça affichera 37° Celsius et 98.6° Fahrenheit
 
 ### Exos 1.2
 Créer également le même système que pour l'exos précédent, mais avec comme nom exos1dot2.
-Créer également un pipe qui, permettra la conversion d'un nombre de secondes passée en paramètre par du TWB
-PS : l'affichage final devra donc donner par exemple : 1 jours, 02 heures, 05 minutes, 00 seconde
-PS2 : Attention au 0 initial et au 's' des mots clés
+Créer également un pipe qui, permettra la conversion d'un nombre de secondes passée en paramètre par du TWB  
+PS : l'affichage final devra donc donner par exemple : 1 jours, 02 heures, 05 minutes, 00 seconde  
+PS2 : Attention au 0 initial et au 's' des mots clés  
 PS3 : Pour vous situer, 62587 secondes donnera 0 jour 17 heures 23 minutes 07 secondes
+
+### Exos 2
