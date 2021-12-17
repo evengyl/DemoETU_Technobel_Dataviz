@@ -1,0 +1,57 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-4">Demo 8 : les directives d'attribut & custom</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Directive d'attribut html
+                </div>
+                <div class="card-body">
+                    <p [hidden]="pTag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eum explicabo necessitatibus magnam expedita ut excepturi quisquam tempora deleniti. Ipsum.</p>
+                    <input [type]="typeInput" [max]="maxInput" [min]="minInput" [value]="valueInput" [step]="stepInput">
+                    <button [disabled]="button">Boutton</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Directive d'attribut Custom
+                </div>
+                <div class="card-body">
+                    <p appPrepareRender>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis labore voluptatem cum totam, aspernatur consequatur neque necessitatibus sunt officia.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis labore voluptatem cum totam, aspernatur consequatur neque necessitatibus sunt officia.</p>
+                    <p appPrepareRender>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis labore voluptatem cum totam, aspernatur consequatur neque necessitatibus sunt officia.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis labore voluptatem cum totam, aspernatur consequatur neque necessitatibus sunt officia.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                </div>
+                <div class="card-body">
+                    <p [appHighlight]="color" defaultColor="yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis labore voluptatem cum totam, aspernatur consequatur neque necessitatibus sunt officia.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis labore voluptatem cum totam, aspernatur consequatur neque necessitatibus sunt officia.</p>
+                    <p appHighlight>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis labore voluptatem cum totam, aspernatur consequatur neque necessitatibus sunt officia.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis labore voluptatem cum totam, aspernatur consequatur neque necessitatibus sunt officia.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

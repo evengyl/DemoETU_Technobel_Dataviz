@@ -22,6 +22,9 @@ import { ConverterSecPipe } from './components/exos/exos1dot2/converter-sec.pipe
 import { Demo7Component } from './components/demo/demo7/demo7.component';
 import { Exos2Component } from './components/exos/exos2/exos2.component';
 import { ConvertNumberPipe } from './components/exos/exos2/convert-number.pipe';
+import { Demo8Component } from './components/demo/demo8/demo8.component';
+import { PrepareRenderDirective } from './components/demo/demo8/prepare-render.directive';
+import { HighlightDirective } from './components/demo/demo8/highlight.directive';
 
 
 @NgModule({
@@ -44,6 +47,9 @@ import { ConvertNumberPipe } from './components/exos/exos2/convert-number.pipe';
     Demo7Component,
     Exos2Component,
     ConvertNumberPipe,
+    Demo8Component,
+    PrepareRenderDirective,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
