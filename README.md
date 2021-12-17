@@ -33,8 +33,8 @@ PS3 : Pour vous situer, 62587 secondes donnera 0 jour 17 heures 23 minutes 07 se
 
 ## Exos 2 - Les directives structurelles
 ### Exos 2
-Sur base de connaissances que vous avez acquise  
-Créer un caddie de course qui permettra d'ajouter des courses, de le lister, d'ajouter et de supprimer des choses,  
+Sur base des connaissances que vous avez acquises.  
+Créer un caddie de courses qui permettra d'ajouter des courses, de le lister, d'ajouter et de supprimer des choses,  
 Bonus : l'heure à laquel il a été ajouté en heure local.  
-Bonus : Vous devrez également créer une customs pipe pour permettre de traduire les quantité de produits dans le panier en toute lettre.  
+Bonus : Vous devrez également créer un custom pipe pour permettre de traduire la quantité de produits dans le panier en toute lettres.  
 (PS: le panier peux ne peux contenir que 5 fois un article maximum)

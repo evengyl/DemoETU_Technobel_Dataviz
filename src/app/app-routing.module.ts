@@ -9,6 +9,7 @@ import { Demo6Component } from './components/demo/demo6/demo6.component';
 import { Demo7Component } from './components/demo/demo7/demo7.component';
 import { Exos1dot1Component } from './components/exos/exos1dot1/exos1dot1.component';
 import { Exos1dot2Component } from './components/exos/exos1dot2/exos1dot2.component';
+import { Exos2Component } from './components/exos/exos2/exos2.component';
 import { ForOforComponent } from './components/shared/for-ofor/for-ofor.component';
 import { HomeComponent } from './components/shared/home/home.component';
 
@@ -25,7 +26,8 @@ const routes: Routes = [
   ]},
   { path : "exos", children : [
     { path : "exos1dot1", component : Exos1dot1Component},
-    { path : "exos1dot2", component : Exos1dot2Component}
+    { path : "exos1dot2", component : Exos1dot2Component},
+    { path : "exos2", component : Exos2Component}
   ]},
     
 
