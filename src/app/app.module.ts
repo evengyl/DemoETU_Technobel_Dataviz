@@ -19,6 +19,7 @@ import { Exos1dot1Component } from './components/exos/exos1dot1/exos1dot1.compon
 import { Exos1dot2Component } from './components/exos/exos1dot2/exos1dot2.component';
 import { ConverterTempPipe } from './components/exos/exos1dot1/converter-temp.pipe';
 import { ConverterSecPipe } from './components/exos/exos1dot2/converter-sec.pipe';
+import { Demo7Component } from './components/demo/demo7/demo7.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { ConverterSecPipe } from './components/exos/exos1dot2/converter-sec.pipe
     Exos1dot2Component,
     ConverterTempPipe,
     ConverterSecPipe,
+    Demo7Component,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,84 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-4">Demo 7 : les directives structurelles</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Affichage conditionnel avec le *ngIf
+                </div>
+                <div class="card-body">
+                    <button *ngIf="!isOpen" (click)="openClose()" class="btn btn-success">Ouvrir</button>
+                    <button *ngIf="isOpen" (click)="openClose()" class="btn btn-danger">Fermer</button>
+                    <div *ngIf="isOpen">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quo temporibus iusto labore sequi. Voluptatem obcaecati optio voluptate doloremque. Quibusdam?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Boucle d'affichage avec le *ngFor
+                </div>
+                <div class="card-body">
+                    <p>ngFor classique sur array[]</p>
+                    <ul>
+                        <!-- sur base d'un li, boucle sur ma liste, en créant item à chaque fois-->
+                        <!--
+                            forEach(let item of liste )
+                            {
+                                <li id="item">item</li>
+                            }
+                        -->
+                        <li *ngFor="let item of liste" id="{{item}}">{{item}}</li>
+                        
+                    </ul>
+                    <p>ngFor avec ! un index !!!!</p>
+                    <ul>
+                        <li *ngFor="let item of liste; let i = index">
+                            {{ i }} {{ item }}
+                        </li>
+                    </ul>
+                    <hr>
+                    <p>ngFor sur object {{ '{ }' }} json classique</p>
+                    <ul>
+                        <li *ngFor="let item of liste2 | keyvalue">{{item.key}} {{item.value}}</li>
+                    </ul>
+                    <hr>
+                    <p>utilisation du *ngFor multiple sur array d'objet</p>
+                    <ul>
+                        <!--
+                            forEach(let item of liste4)
+                            {
+                                <li>
+                                    forEach(let fruit of item)
+                                    {
+                                        <p>fruit.value</p>
+                                    }
+                                </li>
+                            }
+                        -->
+                        <li *ngFor="let item of liste4">
+                            <p *ngFor="let fruit of item | keyvalue">{{fruit.value}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</div>
