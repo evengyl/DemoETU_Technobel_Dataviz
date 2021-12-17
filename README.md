@@ -31,6 +31,7 @@ PS : l'affichage final devra donc donner par exemple : 1 jours, 02 heures, 05 mi
 PS2 : Attention au 0 initial et au 's' des mots clés  
 PS3 : Pour vous situer, 62587 secondes donnera 0 jour 17 heures 23 minutes 07 secondes
 
+## Exos 2 - Les directives structurelles
 ### Exos 2
 Sur base de connaissances que vous avez acquise  
 Créer un caddie de course qui permettra d'ajouter des courses, de le lister, d'ajouter et de supprimer des choses,  
