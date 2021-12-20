@@ -38,3 +38,10 @@ Créer un caddie de courses qui permettra d'ajouter des courses, de le lister, d
 Bonus : l'heure à laquel il a été ajouté en heure local.  
 Bonus : Vous devrez également créer un custom pipe pour permettre de traduire la quantité de produits dans le panier en toute lettres.  
 (PS: le panier peux ne peux contenir que 5 fois un article maximum)
+    
+Pour améliorer vos compétences algo et angular je vous propose : 
+d'améliorer le panier de course, en incluant la possibilité de modifier la liste de course.
+ensuite, il faudra permettre d'enregistrer le panier de course (sauvegarder)
+un bouton permettra d'afficher sur une autre card le panier sauvegarder.
+attention, le panier sauvegarder devra être afficher en vert sur fond jaune, le texte passera en violet 
+lors du survole (directive d'attribut custom)
