@@ -1,0 +1,47 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-4">Demo 9 : les directives de composant</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    ngStyle
+                </div>
+                <div class="card-body">
+                    <p [ngStyle]="{'background-color' : getColor(person.country)} ">{{ person.name }} vient de {{ person.country }} et parle le {{ person.lang }} </p>
+                    <hr>
+                    <p *ngFor="let item of persons" [ngStyle]="{'background-color' : getColor(item.country)}">
+                        {{ item.name }} vient de {{ item.country }} et parle le {{ item.lang }}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    ngClass
+                </div>
+                <div class="card-body">
+                    <p [ngClass]="'alert alert-primary'">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptas.</p>
+                    <p [ngClass]="classP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptas.</p>
+                    <p [ngClass]="{'alert alert-primary' : true}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptas.</p>
+                    <p [ngClass]="['alert', 'alert-primary']">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptas.</p>
+                    <p [ngClass]="getClass('BE')">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptas.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

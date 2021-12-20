@@ -1,0 +1,55 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-4">Demo 10 : les inputs outputs</h1>
+                    <h3>Les inputs -> communiquer depuis un compo parent vers un enfant</h3>
+                    <h3>Les outputs -> communiquer depuis un compo enfant vers son parent</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-12 align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Composant parent, la ou j'injecte le Composant enfant<br>
+                    Pour comminuquer de mon parent vers mon enfant, j'injecte ma prop du parent liée à celle 
+                    de l'enfant par mon input ! 
+                </div>
+                <div class="card-body">
+                    <app-input10
+                        [messageChildren]="messageParent"
+                        [classChildren]="classParent"
+                    ></app-input10>
+                    <button class="btn btn-warning" (click)="changeClass()">Changer la couleur dans l'enfant</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Composant enfant ou je vais transférer des élement de mon enfant vers mon parent graçe au
+                    décorateur @Output()<br>
+                    Dans l'appel selecteur dans mon parent je vais remettre les event créer par l'enfant,
+                    il prendrons cette fois la méthode event du parent, et recevra le $event comme argument,
+                    qui est en réalité le message emit depuis l'enfant graçe à l'output
+                </div>
+                <div class="card-body">
+                    <app-output10
+                        (enterChildren)="onParent($event)"
+                        (leaveChildren)="onParent($event)"
+                    ></app-output10>
+                    <p class="alert alert-danger">Message venant de l'enfant vers le parent : <b>{{ messageByEnfant }}</b></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

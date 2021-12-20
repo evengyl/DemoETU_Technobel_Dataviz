@@ -45,3 +45,15 @@ ensuite, il faudra permettre d'enregistrer le panier de course (sauvegarder)
 un bouton permettra d'afficher sur une autre card le panier sauvegarder.
 attention, le panier sauvegarder devra être afficher en vert sur fond jaune, le texte passera en violet 
 lors du survole (directive d'attribut custom)
+
+## Exos 3 - Les inputs Outputs
+### Exos 3
+Sur base des connaissances que vous avez acquises.  
+Créer un système de gestion de mise à jour de prix de produits léger.  
+Vous devrez avoir un compo parents (products) et un compo enfant (details)  
+le compo parent se chargera de tout.... j'entend par la, la possiblité de supprimer un produits,  
+mettre à jour son prix, c'est lui qui contient la liste de produits.  
+Chaque compo (selecteur) enfant, est en réalité un ligne de produits.  
+Donc : n'oubliez pas, la suppression et la mise à jour du prix se déclenche dans l'enfant MAIS se fait dans le parent.  
+PS : Pour des raisons évidentes de propretés et de professionnalismes, les produits seront un objet simple mais il
+devra contenir, un ID !!!!! (facilité pour la suppression et le modification du prix)

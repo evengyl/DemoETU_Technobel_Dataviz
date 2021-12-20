@@ -25,6 +25,10 @@ import { ConvertNumberPipe } from './components/exos/exos2/convert-number.pipe';
 import { Demo8Component } from './components/demo/demo8/demo8.component';
 import { PrepareRenderDirective } from './components/demo/demo8/prepare-render.directive';
 import { HighlightDirective } from './components/demo/demo8/highlight.directive';
+import { Demo9Component } from './components/demo/demo9/demo9.component';
+import { Demo10Component } from './components/demo/demo10/demo10.component';
+import { Input10Component } from './components/demo/demo10/input10/input10.component';
+import { Output10Component } from './components/demo/demo10/output10/output10.component';
 
 
 @NgModule({
@@ -50,6 +54,10 @@ import { HighlightDirective } from './components/demo/demo8/highlight.directive'
     Demo8Component,
     PrepareRenderDirective,
     HighlightDirective,
+    Demo9Component,
+    Demo10Component,
+    Input10Component,
+    Output10Component,
   ],
   imports: [
     BrowserModule,

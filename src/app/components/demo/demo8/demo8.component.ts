@@ -16,8 +16,8 @@ export class Demo8Component implements OnInit {
 
   color : string = "chartreuse"
 
-  constructor(private el : ElementRef) {
-    console.log(this.el)
+  constructor() {
+    
   }
 
   ngOnInit(): void {
