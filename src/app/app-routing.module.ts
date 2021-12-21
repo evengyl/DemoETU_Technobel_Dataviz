@@ -15,6 +15,7 @@ import { Exos1dot1Component } from './components/exos/exos1dot1/exos1dot1.compon
 import { Exos1dot2Component } from './components/exos/exos1dot2/exos1dot2.component';
 import { Exos2Component } from './components/exos/exos2/exos2.component';
 import { ProductsComponent } from './components/exos/exos3/products/products.component';
+import { Products2Component } from './components/exos/exos3dot2/products/products2.component';
 import { ForOforComponent } from './components/shared/for-ofor/for-ofor.component';
 import { HomeComponent } from './components/shared/home/home.component';
 
@@ -37,7 +38,8 @@ const routes: Routes = [
     { path : "exos1dot1", component : Exos1dot1Component},
     { path : "exos1dot2", component : Exos1dot2Component},
     { path : "exos2", component : Exos2Component},
-    { path : "exos3", component : ProductsComponent }
+    { path : "exos3", component : ProductsComponent },
+    { path : "exos3dot2", component : Products2Component}
   ]},
     
 
