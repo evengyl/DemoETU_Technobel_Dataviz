@@ -29,6 +29,8 @@ import { Demo9Component } from './components/demo/demo9/demo9.component';
 import { Demo10Component } from './components/demo/demo10/demo10.component';
 import { Input10Component } from './components/demo/demo10/input10/input10.component';
 import { Output10Component } from './components/demo/demo10/output10/output10.component';
+import { ProductsComponent } from './components/exos/exos3/products/products.component';
+import { DetailsComponent } from './components/exos/exos3/details/details.component';
 
 
 @NgModule({
@@ -58,6 +60,8 @@ import { Output10Component } from './components/demo/demo10/output10/output10.co
     Demo10Component,
     Input10Component,
     Output10Component,
+    ProductsComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
