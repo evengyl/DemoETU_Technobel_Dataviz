@@ -31,6 +31,11 @@ import { Input10Component } from './components/demo/demo10/input10/input10.compo
 import { Output10Component } from './components/demo/demo10/output10/output10.component';
 import { ProductsComponent } from './components/exos/exos3/products/products.component';
 import { DetailsComponent } from './components/exos/exos3/details/details.component';
+import { Demo11Component } from './components/demo/demo11/demo11.component';
+
+
+
+import { FakeLoginDemo11Service } from './components/demo/demo11/services/fake-login-demo11.service';
 
 
 @NgModule({
@@ -62,13 +67,14 @@ import { DetailsComponent } from './components/exos/exos3/details/details.compon
     Output10Component,
     ProductsComponent,
     DetailsComponent,
+    Demo11Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [FakeLoginDemo11Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

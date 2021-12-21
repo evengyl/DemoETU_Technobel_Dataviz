@@ -47,7 +47,7 @@ attention, le panier sauvegarder devra être afficher en vert sur fond jaune, le
 lors du survole (directive d'attribut custom)
 
 ## Exos 3 - Les inputs Outputs
-### Exos 3
+### Exos 3.1
 Sur base des connaissances que vous avez acquises.  
 Créer un système de gestion de mise à jour de prix de produits léger.  
 Vous devrez avoir un compo parents (products) et un compo enfant (details)  
@@ -57,3 +57,13 @@ Chaque compo (selecteur) enfant, est en réalité un ligne de produits.
 Donc : n'oubliez pas, la suppression et la mise à jour du prix se déclenche dans l'enfant MAIS se fait dans le parent.  
 PS : Pour des raisons évidentes de propretés et de professionnalismes, les produits seront un objet simple mais il
 devra contenir, un ID !!!!! (facilité pour la suppression et le modification du prix)
+
+### Exos 3.2
+Sur base des connaissances que vous avez acquises.  
+Reprendre l'exercise, 3.1 products details, et transformer tout les concepts en appel de service,  
+PS : le service sera créé dans le même folder que l'exos pour des raisons de facilités.  
+PS2 : le service devra n'être utilisable que par le app.module  
+attention, pour l'exercise, plus aucun Input ni Output ne doivent être présents  
+à cela, vous ajouterez un fake service (différent) de connexion.  
+à cela vous ajouterez également une possibilité d'ajouter un produit  
+Seul les personnes loguée, pourront delete, update le prix, ajouter un produits mais par contre elle pourront voir les produits.  

@@ -1,0 +1,36 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-4">Demo 11 : L'injection de dépendances native et les services</h1>
+                    <p>
+                        Patron de conception utilisé par l'injection de dépendances DI, élément de l'IOC, (Inversion of control)<br>
+                        Singleton : Permet de ne créer qu'une instance d'une class, peux importe le user et le client (Majoritairement utilisé, 100% en Angular)<br>
+                        Transient : Pour chaque appel, va créer une nouvelle instance de l'objet<br>
+                        Scope : Va créer une nouvelle instance pour chaque scope !
+                    </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-12 align-self-center">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Fake service de connexion<br>
+                    State : {{isConnect}}
+                </div>
+                <div class="card-body">
+                    <button *ngIf="!isConnect" class="btn btn-success" (click)="login()">Login</button>
+                    <button *ngIf="isConnect" class="btn btn-danger" (click)="logout()">Logout</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
