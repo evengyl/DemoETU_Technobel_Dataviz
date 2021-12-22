@@ -67,3 +67,8 @@ attention, pour l'exercise, plus aucun Input ni Output ne doivent être présent
 à cela, vous ajouterez un fake service (différent) de connexion.  
 à cela vous ajouterez également une possibilité d'ajouter un produit  
 Seul les personnes loguée, pourront delete, update le prix, ajouter un produits mais par contre elle pourront voir les produits.  
+
+### Exos 3.3 entremet
+reprennez le concept du 3.2
+en partant du concept que ce n'est plus des produits, mais un petit système traiteur de fin d'année
+ne vous prenez pas la tête avec les input output, partez en mode un compo, full services

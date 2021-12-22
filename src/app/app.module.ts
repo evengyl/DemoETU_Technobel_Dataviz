@@ -39,6 +39,8 @@ import { FakeLoginDemo11Service } from './components/demo/demo11/services/fake-l
 import { FakeLoginExos3Service } from './components/exos/exos3dot2/services/fake-login-exos3.service';
 import { GestProductsService } from './components/exos/exos3dot2/services/gest-products.service';
 import { Products2Component } from './components/exos/exos3dot2/products/products2.component';
+import { Demo12Component } from './components/demo/demo12/demo12.component';
+import { FakePromiseService } from './components/demo/demo12/services/fake-promise.service';
 
 
 @NgModule({
@@ -72,13 +74,19 @@ import { Products2Component } from './components/exos/exos3dot2/products/product
     DetailsComponent,
     Demo11Component,
     Products2Component,
+    Demo12Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [FakeLoginDemo11Service, FakeLoginExos3Service, GestProductsService],
+  providers: [
+    FakeLoginDemo11Service,
+    FakeLoginExos3Service,
+    GestProductsService,
+    FakePromiseService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
