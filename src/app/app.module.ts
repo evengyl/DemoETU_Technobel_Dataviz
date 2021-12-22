@@ -41,6 +41,8 @@ import { GestProductsService } from './components/exos/exos3dot2/services/gest-p
 import { Products2Component } from './components/exos/exos3dot2/products/products2.component';
 import { Demo12Component } from './components/demo/demo12/demo12.component';
 import { FakePromiseService } from './components/demo/demo12/services/fake-promise.service';
+import { Demo13Component } from './components/demo/demo13/demo13.component';
+import { Demo13guardedComponent } from './components/demo/demo13/demo13guarded/demo13guarded.component';
 
 
 @NgModule({
@@ -75,6 +77,8 @@ import { FakePromiseService } from './components/demo/demo12/services/fake-promi
     Demo11Component,
     Products2Component,
     Demo12Component,
+    Demo13Component,
+    Demo13guardedComponent,
   ],
   imports: [
     BrowserModule,

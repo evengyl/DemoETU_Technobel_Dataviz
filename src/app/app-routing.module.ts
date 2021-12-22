@@ -4,6 +4,9 @@ import { Demo1Component } from './components/demo/demo1/demo1.component';
 import { Demo10Component } from './components/demo/demo10/demo10.component';
 import { Demo11Component } from './components/demo/demo11/demo11.component';
 import { Demo12Component } from './components/demo/demo12/demo12.component';
+import { Demo13Component } from './components/demo/demo13/demo13.component';
+import { Demo13guardedComponent } from './components/demo/demo13/demo13guarded/demo13guarded.component';
+import { LoginGuard } from './components/demo/demo13/guard/login.guard';
 import { Demo2Component } from './components/demo/demo2/demo2.component';
 import { Demo3Component } from './components/demo/demo3/demo3.component';
 import { Demo4Component } from './components/demo/demo4/demo4.component';
@@ -22,7 +25,7 @@ import { HomeComponent } from './components/shared/home/home.component';
 
 const routes: Routes = [
   { path : "", component : HomeComponent},
-  { path : "demo", children : [
+  { path : "demo", /* canActivateChild : [LoginGuard], */ children : [
     { path : "demo1", component : Demo1Component},
     { path : "demo2", component : Demo2Component},
     { path : "demo3", component : Demo3Component},
@@ -34,7 +37,11 @@ const routes: Routes = [
     { path : "demo9", component : Demo9Component},
     { path : "demo10", component : Demo10Component},
     { path : "demo11", component : Demo11Component},
-    { path : "demo12", component : Demo12Component}
+    { path : "demo12", component : Demo12Component},
+    { path : "demo13", children : [
+      {path : "", component : Demo13Component},
+      {path : "demo13g", component : Demo13guardedComponent, canActivate : [LoginGuard] /*canDeactivate : [LoginGuard]*/}
+    ]}
   ]},
   { path : "exos", children : [
     { path : "exos1dot1", component : Exos1dot1Component},
