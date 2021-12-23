@@ -20,6 +20,7 @@ export class Demo15Component implements OnInit {
 
   ngOnInit(): void {
     this.myForm = generateMyForm(this.fb)
+
   }
 
   sendTwb()
@@ -32,7 +33,8 @@ export class Demo15Component implements OnInit {
 
   sendRf()
   {
-    console.log(this.myForm)
+    console.log(this.myForm.valid)
+    console.log(this.myForm.controls.name.valid)
   }
 
 

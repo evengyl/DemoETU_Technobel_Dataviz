@@ -68,13 +68,27 @@
                         </select>
                         <br>
                         <button 
+                            *ngIf="myForm.valid"
                             (click)="sendRf()" 
                             class="btn btn-warning"
                         >Envoyer</button>
+                        <br><br><br>
+                        Form Control (abstractControl)
+                        <span *ngIf="myForm.pristine" class="alert alert-info">(pristine)</span>&nbsp;&nbsp;
+                        <span *ngIf="myForm.touched" class="alert alert-info">(touched)</span>&nbsp;&nbsp;
+                        <span *ngIf="myForm.invalid" class="alert alert-info">(invalid)</span>&nbsp;&nbsp;
+                        <span *ngIf="myForm.valid" class="alert alert-info">(valid)</span>
+
+                        <br><br><br>
+                        Form control individual (control)
+                        <span *ngIf="myForm.controls.name.valid" class="alert alert-primary">Name : (valid)</span>&nbsp;&nbsp;
+                        <span *ngIf="myForm.controls.email.valid" class="alert alert-primary">Email : (valid)</span>&nbsp;&nbsp;
+                        <span *ngIf="myForm.controls.password.valid" class="alert alert-primary">Password : (valid)</span>&nbsp;&nbsp;
+                        <span *ngIf="myForm.controls.gender.valid" class="alert alert-primary">Gender (valid)</span>
                     </form>
                 </div>
             </div>
         </div>
-        
+        <hr><hr><hr>
     </div>
 </div>
