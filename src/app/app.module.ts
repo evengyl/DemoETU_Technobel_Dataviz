@@ -46,6 +46,9 @@ import { Demo13guardedComponent } from './components/demo/demo13/demo13guarded/d
 import { Demo14Component } from './components/demo/demo14/demo14.component';
 import { Demo15Component } from './components/demo/demo15/demo15.component';
 import { Demo16Component } from './components/demo/demo16/demo16.component';
+import { Demo17Component } from './components/demo/demo17/demo17.component';
+import { FakeLogin17Service } from './components/demo/demo17/services/fake-login17.service';
+import { FakeLogin13Service } from './components/demo/demo13/services/fake-login13.service';
 
 
 @NgModule({
@@ -85,6 +88,7 @@ import { Demo16Component } from './components/demo/demo16/demo16.component';
     Demo14Component,
     Demo15Component,
     Demo16Component,
+    Demo17Component,
   ],
   imports: [
     BrowserModule,
@@ -96,7 +100,9 @@ import { Demo16Component } from './components/demo/demo16/demo16.component';
     FakeLoginDemo11Service,
     FakeLoginExos3Service,
     GestProductsService,
-    FakePromiseService
+    FakePromiseService,
+    FakeLogin13Service,
+    FakeLogin17Service
   ],
   bootstrap: [AppComponent]
 })

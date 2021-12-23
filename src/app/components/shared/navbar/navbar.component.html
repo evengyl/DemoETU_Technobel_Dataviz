@@ -5,7 +5,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav me-auto">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Demo 1 - 10
@@ -51,6 +51,8 @@
               <li><a class="dropdown-item" routerLink="demo/demo15">Demo 15 - Les reactives forms</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" routerLink="demo/demo16">Demo 16 - Les customs validators</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" routerLink="demo/demo17">Demo 17 - Les observables</a></li>
 
 
             </ul>
@@ -74,6 +76,17 @@
             </ul>
           </li>
         </ul>
+
+        <span class="navbar-text">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li *ngIf="!isConnect" class="nav-item"><a class="nav-link">Login</a></li>
+            <li *ngIf="isConnect"class="nav-item"><a class="nav-link">Logout</a></li>
+            <li *ngIf="!isConnect" class="nav-item"><a class="nav-link">Create Account</a></li>
+          </ul>
+        </span>
       </div>
     </div>
   </nav>
+  <p class="alert alert-primary">Résultat de mon demo 17 of() : {{ simpleOfResponse }}</p>
+  <p class="alert alert-primary">Résultat de mon demo 17 from() : {{ simpleFromResponse }}</p>
+  <p class="alert alert-primary">Résultat de mon demo 17 interval() : {{ simpleIntervalResponse }}</p>
