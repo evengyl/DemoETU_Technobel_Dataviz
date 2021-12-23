@@ -52,6 +52,8 @@ import { FakePromiseService } from './components/demo/demo12/services/fake-promi
 import { FakeLogin17Service } from './components/demo/demo17/services/fake-login17.service';
 import { FakeLogin13Service } from './components/demo/demo13/services/fake-login13.service';
 import { CountriesService } from './components/demo/demo18/serivces/countries.service';
+import { Demo19Component } from './components/demo/demo19/demo19.component';
+import { Demo20Component } from './components/demo/demo20/demo20.component';
 
 
 @NgModule({
@@ -93,6 +95,8 @@ import { CountriesService } from './components/demo/demo18/serivces/countries.se
     Demo16Component,
     Demo17Component,
     Demo18Component,
+    Demo19Component,
+    Demo20Component,
   ],
   imports: [
     BrowserModule,
