@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule} from '@angular/common/http'
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,23 +34,24 @@ import { Output10Component } from './components/demo/demo10/output10/output10.co
 import { ProductsComponent } from './components/exos/exos3/products/products.component';
 import { DetailsComponent } from './components/exos/exos3/details/details.component';
 import { Demo11Component } from './components/demo/demo11/demo11.component';
-
-
-
-import { FakeLoginDemo11Service } from './components/demo/demo11/services/fake-login-demo11.service';
-import { FakeLoginExos3Service } from './components/exos/exos3dot2/services/fake-login-exos3.service';
-import { GestProductsService } from './components/exos/exos3dot2/services/gest-products.service';
 import { Products2Component } from './components/exos/exos3dot2/products/products2.component';
 import { Demo12Component } from './components/demo/demo12/demo12.component';
-import { FakePromiseService } from './components/demo/demo12/services/fake-promise.service';
 import { Demo13Component } from './components/demo/demo13/demo13.component';
 import { Demo13guardedComponent } from './components/demo/demo13/demo13guarded/demo13guarded.component';
 import { Demo14Component } from './components/demo/demo14/demo14.component';
 import { Demo15Component } from './components/demo/demo15/demo15.component';
 import { Demo16Component } from './components/demo/demo16/demo16.component';
 import { Demo17Component } from './components/demo/demo17/demo17.component';
+import { Demo18Component } from './components/demo/demo18/demo18.component';
+
+
+import { FakeLoginDemo11Service } from './components/demo/demo11/services/fake-login-demo11.service';
+import { FakeLoginExos3Service } from './components/exos/exos3dot2/services/fake-login-exos3.service';
+import { GestProductsService } from './components/exos/exos3dot2/services/gest-products.service';
+import { FakePromiseService } from './components/demo/demo12/services/fake-promise.service';
 import { FakeLogin17Service } from './components/demo/demo17/services/fake-login17.service';
 import { FakeLogin13Service } from './components/demo/demo13/services/fake-login13.service';
+import { CountriesService } from './components/demo/demo18/serivces/countries.service';
 
 
 @NgModule({
@@ -89,12 +92,14 @@ import { FakeLogin13Service } from './components/demo/demo13/services/fake-login
     Demo15Component,
     Demo16Component,
     Demo17Component,
+    Demo18Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule /* permet l'utilisation du TWB */,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     FakeLoginDemo11Service,
@@ -102,7 +107,8 @@ import { FakeLogin13Service } from './components/demo/demo13/services/fake-login
     GestProductsService,
     FakePromiseService,
     FakeLogin13Service,
-    FakeLogin17Service
+    FakeLogin17Service,
+    CountriesService
   ],
   bootstrap: [AppComponent]
 })
