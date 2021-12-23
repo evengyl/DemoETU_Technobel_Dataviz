@@ -7,6 +7,8 @@ import { Demo12Component } from './components/demo/demo12/demo12.component';
 import { Demo13Component } from './components/demo/demo13/demo13.component';
 import { Demo13guardedComponent } from './components/demo/demo13/demo13guarded/demo13guarded.component';
 import { LoginGuard } from './components/demo/demo13/guard/login.guard';
+import { Demo14Component } from './components/demo/demo14/demo14.component';
+import { Demo15Component } from './components/demo/demo15/demo15.component';
 import { Demo2Component } from './components/demo/demo2/demo2.component';
 import { Demo3Component } from './components/demo/demo3/demo3.component';
 import { Demo4Component } from './components/demo/demo4/demo4.component';
@@ -41,7 +43,9 @@ const routes: Routes = [
     { path : "demo13", children : [
       {path : "", component : Demo13Component},
       {path : "demo13g", component : Demo13guardedComponent, canActivate : [LoginGuard] /*canDeactivate : [LoginGuard]*/}
-    ]}
+    ]},
+    { path : "demo14", component : Demo14Component},
+    { path : "demo15", component : Demo15Component}
   ]},
   { path : "exos", children : [
     { path : "exos1dot1", component : Exos1dot1Component},

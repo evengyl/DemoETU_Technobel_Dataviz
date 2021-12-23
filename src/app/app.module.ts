@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -43,6 +43,8 @@ import { Demo12Component } from './components/demo/demo12/demo12.component';
 import { FakePromiseService } from './components/demo/demo12/services/fake-promise.service';
 import { Demo13Component } from './components/demo/demo13/demo13.component';
 import { Demo13guardedComponent } from './components/demo/demo13/demo13guarded/demo13guarded.component';
+import { Demo14Component } from './components/demo/demo14/demo14.component';
+import { Demo15Component } from './components/demo/demo15/demo15.component';
 
 
 @NgModule({
@@ -79,11 +81,14 @@ import { Demo13guardedComponent } from './components/demo/demo13/demo13guarded/d
     Demo12Component,
     Demo13Component,
     Demo13guardedComponent,
+    Demo14Component,
+    Demo15Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule /* permet l'utilisation du TWB */,
+    ReactiveFormsModule
   ],
   providers: [
     FakeLoginDemo11Service,
